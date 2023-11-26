@@ -41,7 +41,7 @@ function MainComponent() {
                     transition={{ duration: 0.5, delay: 1 }}
                 >
                     <Button text={"Dashboard"} />
-                    <Button text={"Share"} outlined={true} />
+                    <Button text={"Share"} outLined={true} />
                 </motion.div>
             </div>
             <div className="phone-container">
@@ -59,6 +59,7 @@ function MainComponent() {
                 />
                 <img src={gradient} className="gradient" alt="image" />
             </div>
+            
         </div>
     );
 }
