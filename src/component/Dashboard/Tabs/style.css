@@ -1,0 +1,26 @@
+.grid-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 3rem;
+}
+
+.list-table{
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 1200px){
+    .list-table{
+        width: 95%
+    }
+}
+
+@media(max-width: 450px){
+    .table-wrapper{
+        padding: 10px !important;
+    }
+}

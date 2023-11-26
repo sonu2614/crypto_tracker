@@ -1,0 +1,106 @@
+.list-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    transition: all 0.1s;
+    border-radius: 1rem;
+}
+.watchlist-btn{
+    display: flex;
+    justify-content: center;
+}
+.list-row:hover {
+    background-color: var(--darkgrey);
+}
+
+.list-row td {
+    text-align: left;
+    width: 20%;
+}
+
+.list-row .total-volume{
+    color: var(--white) !important;
+}
+
+.td-image {
+    width: 3rem !important;
+    margin-right: 1.5rem;
+}
+
+.td-sm {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .td-icon {
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .td-total-volume {
+        display: none;
+    }
+    .back-to-top-btn{
+        background-color: var(--darkgrey);
+        z-index: 100;
+    }
+}
+@media (max-width: 800px) {
+    .list-table{
+        width: 100%;
+    }
+    .td-lg {
+        display: none;
+    }
+    .td-sm {
+        display: block;
+    }
+    td > h3,
+    td > p{
+        font-size: 0.9rem !important;
+    }
+    td > .price-chip{
+        padding: 0.2rem 0.1rem;
+        font-size: 0.9rem;
+        min-width: 60px;
+    }
+}
+
+@media (max-width: 600px){
+    td .coin-symbol{
+        font-size: 1rem;
+    }
+    td .coin-name{
+        font-size: 0.9rem;
+    }
+    tr .add-to-watchlist{
+        padding: 0.25rem;
+    }
+}
+
+@media (max-width: 450px){
+    .list-row{
+        padding: 0.5rem 0; 
+    }
+    tr .chip-flex{
+        display: none;
+    }
+    
+    tr .coin-logo{
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+    }
+    tr > .td-image{
+        width: 2.5rem !important;
+        margin-right: 0 !important;
+    }
+    tr .coin-symbol{
+        font-size: 0.9rem;
+    }
+    tr .coin-name{
+        font-size: 0.8rem;
+    }
+}

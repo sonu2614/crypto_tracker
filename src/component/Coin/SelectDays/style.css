@@ -1,0 +1,12 @@
+.select-days{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 600px){
+    .select-days{
+        margin: 0 1.5rem;
+    }
+}
